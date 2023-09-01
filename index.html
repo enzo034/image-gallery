@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <label id="add-img" for="input-file">+</label>
+    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+    <div class="full-img" id="fullImgBox">
+        <img src="img/img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery" id="imgGallery">
+        <img src="img/img1.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img2.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img4.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
